@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Google FAQs</title>
+</head>
+<body>
+    <header>
+        <div class="column-top">
+            <div class="header-left">
+                <img src="img/logo_google.jpg" alt="Logo Google">
+                <p class="titol">Privacy e termini</p>
+            </div>
+            <div class="header-right">
+                <i class="fas fa-th grey"></i>
+                <i class="fas fa-user-circle grey"></i>
+            </div>
+        </div>
+        <div class="column-bot">
+            <p>Introduzione</p>
+            <p>Norme sulla privacy</p>
+            <p>Termini di servizio</p>
+            <p>Tecnologie</p>
+            <p class="active">Domande frequenti</p>
+        </div>
+        
+    </header>
+
 <?php
     $questions = [
         [
@@ -44,3 +76,5 @@
         echo "<h2>{$question["requests"]}</h2>" . "<p>{$question["answer"]}</p>";
     }
 ?> 
+</body>
+</html>
